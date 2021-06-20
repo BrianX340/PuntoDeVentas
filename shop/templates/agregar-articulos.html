@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/agregar-articulos.css') }}">
+    <title>KennyShop</title>
+    
+</head>
+<body>
+    
+
+<div class='parent-pos'>
+    <div class='inicio-superior'>
+        <div class='panel-derecho'>
+            <div class='panel-grande'>
+                <div class='visor'>
+                    <div class='panel-visor'>
+                        <div class='form-container'>
+                            <form>
+                                <div class='formulario' method="post">
+                                    <div class='campo'>
+                                        <span>Codigo de Barras: </span><div><input type="text" name="barcode" placeholder="Ingrese Codigo de Barras" autocomplete="off" id="inbarcode" mensajetipo='inbarcode'></div>
+                                    </div>
+                                    <div class='campo'>
+                                        <span>Nombre: </span><div><input maxlength="8" type="text" name="name" placeholder="Ingrese Nombre del Articulo" mensajetipo='inname' id="inname"></div>
+                                    </div>
+                                    <div class='campo'>
+                                        <span>Precio: </span><div><input type="text" name="price" placeholder="Ingrese Precio" mensajetipo='inprice' id="inprice"></div>
+                                    </div>
+                                </div>
+                            </form> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class='panel-derecho-hijo'>
+                <div class='acciones'>
+                    <ul>
+                        <span class='limpiar'>Limpiar Campos</span>
+                        <span class='volver'>Volver</span>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='inicio-inferior'>
+        <div id='logs'>
+        </div>
+    </div>
+</div>
+
+
+</body>
+<script src="{{ url_for('static', filename='js/add-articulos.js') }}"></script>
+</html>

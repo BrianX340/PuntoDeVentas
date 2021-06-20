@@ -1,0 +1,274 @@
+body * {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.parent-pos {
+    display: flex;
+    width: 800px;
+    height: 600px;
+    border: 3px black solid;
+    flex-direction: column;
+    background: linear-gradient(to bottom, rgb(0 243 255 / 55%) 0%, rgb(17 185 85) 100%);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+
+.inicio-superior {
+    width: 100%;
+    height: 73%;
+    border: 1px rgb(0, 255, 21) solid;
+    display: flex;
+    background: linear-gradient(to bottom, rgb(255 0 90 / 43%) 0%, rgb(139 17 185 / 58%) 100%);
+    border-radius: 20px;
+    border: 2px black solid;
+}
+
+.inicio-inferior {
+    width: 100%;
+    height: 23%;
+    border: 1px rgb(0, 255, 21) solid;
+    display: flex;
+    background: linear-gradient(to bottom, rgb(255 0 90 / 43%) 0%, rgb(139 17 185 / 58%) 100%);
+    border-radius: 20px;
+    margin-top: 4%;
+    border: 2px black solid;
+    align-items: center;
+    justify-content: center;
+}
+
+.inicio-inferior div {
+    width: 90%;
+    height: 90%;
+}
+
+.panel-izquierdo {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.panel-derecho {
+    width: 75%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.panel-grande {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.panel-derecho-hijo {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.visor {
+    width: 45%;
+    height: 90%;
+}
+
+.articulo_cargado {
+    margin-top: 5px;
+    width: 90%;
+    background-color: white;
+    height: 40px;
+    border-radius: 15px;
+    flex-direction: column;
+    border: 1px black solid;
+    align-items: flex-end;
+    font-size: 90%;
+}
+
+.articulo_cargado span {
+    padding-right: 15px;
+}
+
+.codigo-barras-imagen {
+    width: 45%;
+    height: 90%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.codigo-de-barras {
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 22%;
+    border: 2px black solid;
+    display: flex;
+    background: linear-gradient(to bottom, rgb(255 252 65 / 71%) 0%, rgb(152 255 47 / 74%) 100%);
+    border-radius: 15px;
+}
+
+.codigo-de-barras input {
+    outline: none;
+    width: 90%;
+    height: 70%;
+    border-radius: 20px;
+    background-color: white;
+    font-family: "Calculator";
+    font-size: 41px;
+    text-align: center;
+}
+
+
+.imagen {
+    width: 90%;
+    height: 75%;
+    border: 2px black solid;
+    display: flex;
+    margin-top: 3%;
+    background: linear-gradient(to bottom, rgb(255 255 255 / 67%) 0%, rgb(169 169 169 / 90%) 100%);
+    border-radius: 15px;
+}
+
+.visor-articulos-cargados {
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 90%;
+    height: 66%;
+    border-radius: 15px;
+    background: linear-gradient(to bottom, rgb(255 255 255 / 43%) 0%, rgb(255 255 255 / 82%) 100%);
+    border: 2px black solid;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.boton-totalizar {
+    justify-content: center;
+    align-content: center;
+    width: 60%;
+    margin: 5% 6% 5% 1%;
+    height: 8%;
+    border-radius: 15px;
+    background: linear-gradient(to bottom, rgb(255 122 0 / 43%) 0%, rgb(255 147 3 / 64%) 100%);
+    border: 2px black solid;
+    align-self: flex-end;
+}
+
+.totalizator {
+    margin: auto;
+    font-size: 24px;
+    color: black;
+    font-family: cursive;
+    cursor: pointer;
+}
+
+#monto-cobrar {
+    margin: auto;
+    font-size: xx-large;
+    color: white;
+    font-family: 'Calculator';
+}
+
+.monto-total {
+    width: 90%;
+    height: 12%;
+    background-color: gray;
+    margin-top: 2%;
+    border-radius: 15px;
+    background: linear-gradient(to bottom, rgb(90 90 90 / 87%) 0%, rgb(107 107 107 / 82%) 100%);
+    border: 2px black solid;
+}
+
+.panel-visor {
+    width: 100%;
+    height: 100%;
+    background-color: #767676bd;
+    margin: auto;
+    border-radius: 20px;
+    border: 2px black solid;
+}
+
+.acciones {
+    width: 90%;
+    height: 80%;
+    border-radius: 20px;
+    border: 2px black solid;
+    background: linear-gradient(to bottom, rgb(255 193 0 / 43%) 0%, rgb(255 240 0 / 58%) 100%);
+}
+
+.acciones ul {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+.acciones ul div {
+    cursor: pointer;
+    width: 15%;
+    height: 48%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border: 2px solid black;
+    border-radius: 30px;
+    text-align: center;
+    font-size: initial;
+    background: linear-gradient(to bottom, rgb(255 219 75 / 49%) 0%, rgb(255 83 83 / 57%) 100%);
+}
+
+.doble_boton {
+    display: none;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.doble_boton div {
+    width: 50%;
+    height: 20%;
+    border: 2px black solid;
+    border-radius: 40px;
+    margin-bottom: 10%;
+}
+
+.doble_boton div:first-child {
+    background: linear-gradient(to bottom, rgb(28 137 29 / 83%) 0%, rgb(0 255 49 / 57%) 100%);
+}
+
+.doble_boton div:last-child {
+    background: linear-gradient(to bottom, rgb(255 219 75 / 49%) 0%, rgb(255 83 83 / 57%) 100%);
+}
+
+.doble_boton div span {
+    margin: auto;
+    font-size: 20px;
+    font-family: cursive;
+}
+
+.anulador {
+    display: none;
+}
+
+.anulardefinitivo {
+    cursor: pointer;
+}
+
+.cancel {
+    cursor: pointer;
+}

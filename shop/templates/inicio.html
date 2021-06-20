@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<style type="text/css" media="screen, print">
+    @font-face {
+        font-family: "Calculator";
+        src: url("{{ url_for('static', filename='fonts/Calculator.ttf') }}");
+    }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/inicio.css') }}">
+    <title>KennyShop</title>
+    
+</head>
+<body>
+    
+
+<div class='parent-pos'>
+    <div class='inicio-superior'>
+        <div class='panel-izquierdo'>
+            <div id='visor-articulos-cargados' class='visor-articulos-cargados'>
+
+            </div>
+            <div class='boton-totalizar'>
+                <span class='totalizator'>Totalizar</span>
+            </div>
+            <div class='monto-total'>
+                <span id='monto-cobrar'>$    TOTAL</span>
+            </div>
+        </div>
+        <div class='panel-derecho'>
+            <div class='panel-grande'>
+                <div class='visor'>
+                    <div class='panel-visor'>
+                        <div class='efectivo-o-fiado doble_boton'>
+                            <div>
+                                <span>Efectivo</span>
+                            </div>
+                            <div>
+                                <span>Fiado</span>
+                            </div>
+                        </div>
+
+                        <div class='anulador doble_boton'>
+                            <div class='cancel'>
+                                <span class='cancel'>Cancelar</span>
+                            </div>
+                            <div class='anulardefinitivo'>
+                                <span class='anulardefinitivo'>Anular todo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='codigo-barras-imagen'>
+                    <div class='codigo-de-barras'>
+                        <input id='barcodescan' mensajetipo='barcodescan' type="text">
+                    </div>
+                    <div class='imagen'>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class='panel-derecho-hijo'>
+                <div class='acciones'>
+                    <ul>
+                        <div class='anular-venta'>Anular</div>
+                        <div>Consulta Articulos</div>
+                        <div>Consulta Clientes</div>
+                        <div class='add-articles'>Añadir Articulos</div>
+                        <div class='add-clientes'>Añadir Clientes</div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='inicio-inferior'>
+        <div>
+            logs
+        </div>
+    </div>
+</div>
+
+
+</body>
+<script src="{{ url_for('static', filename='js/inicio.js') }}"></script>
+</html>

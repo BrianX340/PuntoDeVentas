@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/agregar-clientes.css') }}">
+    <title>KennyShop</title>
+    
+</head>
+<body>
+    
+
+<div class='parent-pos'>
+    <div class='inicio-superior'>
+        <div class='panel-derecho'>
+            <div class='panel-grande'>
+                <div class='visor'>
+                    <div class='panel-visor'>
+                        <div class='form-container'>
+                            <div class='form-panel'>
+                                <div>
+                                    <div class='campo'><span>Nombre:</span><span id='name' contenteditable="true" placeholder="Ingrese Nombre"></span></div>
+                                </div>
+                                <div>
+                                    <div class='campo'><span>DNI:</span><span id='dni' contenteditable="true" placeholder="Ingrese DNI"></span></div>
+                                </div>
+                                <div>
+                                    <div class='campo'><span>Phone:</span><span id='phone' contenteditable="true" placeholder="Ingrese celular"></span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class='panel-derecho-hijo'>
+                <div class='acciones'>
+                    <ul>
+                        <span class='limpiar'>Limpiar Campos</span>
+                        <span class='volver'>Volver</span>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='inicio-inferior'>
+        <div id='logs'>
+        </div>
+    </div>
+</div>
+
+
+</body>
+<script src="{{ url_for('static', filename='js/add-client.js') }}"></script>
+</html>
